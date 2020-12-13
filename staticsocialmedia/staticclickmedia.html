@@ -1,0 +1,419 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://getbootstrap.com/docs/4.5/examples/album/# -->
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="https://ZennithYattare.github.io/socmedp/css/bootstrap.css" rel="stylesheet">
+		<link href="https://ZennithYattare.github.io/socmedp/css/album.css" rel="stylesheet">
+		<style>
+			.bd-placeholder-img 
+			{
+				font-size: 1.125rem;
+				text-anchor: middle;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+
+			@media (min-width: 768px) 
+			{
+				.bd-placeholder-img-lg 
+				{
+					font-size: 3.5rem;
+				}
+			}
+			.borderimage
+			{
+				border-radius: 50%!important;
+			}
+			.bgcolor
+			{
+				background-color: #1c1e21;
+			}
+			.cardtext
+			{
+				color: #FAFAFA;
+			}
+
+			body {
+  				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			.topnav {
+  				overflow: hidden;
+  				background-color: #333;
+  				position: relative;
+			}
+
+			.topnav #myLinks {
+  				display: none;
+			}
+
+			.topnav a {
+  				color: white;
+  				padding: 14px 16px 14px 16px;
+  				text-decoration: none;
+  				font-size: 17px;
+  				display: block;
+			}
+
+			.topnav a.icon {
+  				background: black;
+  				display: block;
+  				position: absolute;
+  				right: 0;
+  				top: 0;
+			}
+
+			.topnav a:hover {
+  				background-color: #ddd;
+  				color: black;
+			}
+
+			.active {
+  				color: white;
+			}
+			
+                       
+		</style>
+	</head>
+    </body>
+  
+	<body class="bgcolor">
+		<header>
+			<div class="navbar navbar-dark bg-dark shadow-sm">
+				<div class="container d-flex justify-content-between">
+				
+					<a href="clickmedia.jsp" class="navbar-brand d-flex align-items-center">
+					<img class="mr-2" height="40px" src="https://raw.githubusercontent.com/ZennithYattare/ZennithYattare.github.io/master/socmedp/images/160062610033392493.png" title="From Noun Project">
+						<strong>Click Media</strong>
+					</a>
+				</div>
+				<div class="dropdown">
+				  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    Options
+				  </button>
+				  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+				    <a class="dropdown-item" href="help.jsp">Help Center</a>
+				    <a class="dropdown-item" href="settings.jsp">Settings</a>
+				    <a class="dropdown-item" href="./LogoutServlet">Log out</a>
+				  </div>
+				</div>
+			</div>
+ 
+		</header>
+		  
+		<main role="main">
+			<section class="jumbotron text-center bgcolor">
+			<div class="container">
+				<p>
+					<img class="borderimage mr-2" src="https://raw.githubusercontent.com/ZennithYattare/ZennithYattare.github.io/master/socmedp/images/cat.jpg" width="auto" height="70px" style="vertical-align:middle" title="user photo">
+					@<span>${userid}</span>
+				</p>
+				<p>
+					 <a class="btn btn-secondary my-2">
+					 <script type="text/javascript"> 
+						var min=0; 
+						var max=4000; 
+						var random = Math.floor(Math.random() * (+max + 1 - +min)) + +min; 
+						document.write("Followers | " + random ); 
+					</script>					 
+					</a>
+					<a class="btn btn-secondary my-2">
+					<script type="text/javascript"> 
+						var min=0; 
+						var max=4000; 
+						var random = Math.floor(Math.random() * (+max + 1 - +min)) + +min; 
+						document.write("Following | " + random ); 
+					</script>	
+					</a>
+					<a class="btn btn-secondary my-2">Likes</a>
+				</p>				
+				<p>
+					<input type="text" style="font-size:12pt; height:200px; width:300px; background:#1c1e21; 			border-color: #f2f2f2; border-width: 3px; border-style: solid; border-radius: 10px; text-align: center; color: white;" placeholder="Type your thoughts!">
+					<br>
+					<a href="" class="btn btn-secondary my-2">Post!</a>
+				</p>
+			</div>
+			<hr style="width: 70%; height:2px; background: #FAFAFA;">
+			</section>
+			
+		<h1 style="text-align: center;"> New posts for today </h1>
+		<div> <p> <br> </p> </div>
+		<div class="album">
+			<div class="container">
+				<div class="card-columns">
+					<div class="card bg-secondary">
+						<div class="card-header bg-info">
+							<div class="mr-2" style="height: 20px; width: 20px; background-color: #F60; vertical-align: middle; border-radius: 50%; display: inline-block;"></div>
+								<script type="text/javascript">
+								var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+								var string_length = 2;
+								var randomstring = '';
+								for (var i=0; i<string_length; i++) 
+								{
+									var rnum = Math.floor(Math.random() * chars.length);
+									randomstring += chars.substring(rnum,rnum+1);
+								}
+								bacon = randomstring;
+								document.write("User" + bacon);
+								</script>							
+						</div>
+						<img src="https://raw.githubusercontent.com/ZennithYattare/ZennithYattare.github.io/master/socmedp/images/jonny-gios-CtdZoTpP6wE-unsplash.jpg" class="card-img-top" alt="Photo by Jonny Gios on Unsplash">
+						<div class="card-body">
+							<h5 class="card-title">Trekking</h5>
+							<p class="card-text">Took a long time to get across, but it was worth it.</p>
+							<p> <small>					
+							<script type="text/javascript"> 
+								var min=1; 
+								var max=58; 
+								var random = Math.floor(Math.random() * (+max + 1 - +min)) + +min; 
+								document.write("Posted " + random + " minutes ago" ); 
+							</script>
+							</small> </p>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+								  <button type="button" class="btn btn-sm btn-outline-secondary">Like</button>
+								  <button type="button" class="btn btn-sm btn-outline-secondary">Comment</button>
+								</div>
+							</div>
+						</div>
+					</div>
+	  
+					<div class="card bg-secondary">
+						<div class="card-header">
+							<div class="mr-2" style="height: 20px; width: 20px; background-color: #176BEF; vertical-align: middle; border-radius: 50%; display: inline-block;"></div>
+								<script type="text/javascript">
+								var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+								var string_length = 2;
+								var randomstring = '';
+								for (var i=0; i<string_length; i++) 
+								{
+									var rnum = Math.floor(Math.random() * chars.length);
+									randomstring += chars.substring(rnum,rnum+1);
+								}
+								bacon = randomstring;
+								document.write("User" + bacon);
+								</script>							
+						</div>
+						<img src="https://raw.githubusercontent.com/ZennithYattare/ZennithYattare.github.io/master/socmedp/images/sebastian-knoll-NQtSWITtowE-unsplash.jpg" class="card-img-top" alt="Photo by Sebastion Knoll on Unsplash">
+						<div class="card-body">
+							<h5 class="card-title">Galaxy</h5>
+							<p class="card-text">It was a beautiful night.</p>
+							<p>
+								<small>							<script type="text/javascript"> 
+								var min=1; 
+								var max=58; 
+								var random = Math.floor(Math.random() * (+max + 1 - +min)) + +min; 
+								document.write("Posted " + random + " minutes ago" ); 
+							</script></small>
+							</p>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+									<button type="button" class="btn btn-sm btn-outline-secondary">Like</button>
+									<button type="button" class="btn btn-sm btn-outline-secondary">Comment</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="card bg-secondary">
+						<div class="card-header">
+							<div class="mr-2" style="height: 20px; width: 20px; background-color: #CCFFE5; vertical-align: middle; border-radius: 50%; display: inline-block;"></div>
+								<script type="text/javascript">
+								var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+								var string_length = 2;
+								var randomstring = '';
+								for (var i=0; i<string_length; i++) 
+								{
+									var rnum = Math.floor(Math.random() * chars.length);
+									randomstring += chars.substring(rnum,rnum+1);
+								}
+								bacon = randomstring;
+								document.write("User" + bacon);
+								</script>							
+						</div>
+						<img src="https://github.com/ZennithYattare/ZennithYattare.github.io/blob/master/socmedp/images/mary-ray-40PeNF4og5s-unsplash.jpg?raw=true" class="card-img-top" alt="Photo by Mary Ray on Unsplash">
+						<div class="card-body">
+							<h5 class="card-title">Empty streets</h5>
+							<p class="card-text">Narrow alley but the emptiness makes it feel wide.</p>
+							<p> <small>							<script type="text/javascript"> 
+								var min=1; 
+								var max=58; 
+								var random = Math.floor(Math.random() * (+max + 1 - +min)) + +min; 
+								document.write("Updated " + random + " minutes ago" ); 
+							</script></small> </p>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+									<button type="button" class="btn btn-sm btn-outline-secondary">Like</button>
+									<button type="button" class="btn btn-sm btn-outline-secondary">Comment</button>
+								</div>
+							</div>							
+						</div>
+					</div>
+					
+					<div class="card bg-secondary">
+						<div class="card-header bg-success">
+							<div class="mr-2" style="height: 20px; width: 20px; background-color: #E633FF; vertical-align: middle; border-radius: 50%; display: inline-block;"></div>
+								<script type="text/javascript">
+								var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+								var string_length = 2;
+								var randomstring = '';
+								for (var i=0; i<string_length; i++) 
+								{
+									var rnum = Math.floor(Math.random() * chars.length);
+									randomstring += chars.substring(rnum,rnum+1);
+								}
+								bacon = randomstring;
+								document.write("User" + bacon);
+								</script>							
+						</div>
+						<blockquote class="blockquote mb-0">
+						  <p style="text-align: center;"> <br>Looking for ISP agents, need Internet connection ASAP!</p>
+						</blockquote>
+						<div class="card-body">
+						<p> <small>							<script type="text/javascript"> 
+								var min=1; 
+								var max=23; 
+								var random = Math.floor(Math.random() * (+max + 1 - +min)) + +min; 
+								document.write("Posted " + random + " hours ago" ); 
+							</script></small> </p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group">
+								<button type="button" class="btn btn-sm btn-outline-secondary">Like</button>
+								<button type="button" class="btn btn-sm btn-outline-secondary">Comment</button>
+							</div>
+						</div>
+						</div>						
+					</div>
+					
+					<div class="card bg-secondary">
+						<div class="card-header bg-danger">
+							<div class="mr-2" style="height: 20px; width: 20px; background-color: #8B8BFF; vertical-align: middle; border-radius: 50%; display: inline-block;"></div>
+								<script type="text/javascript">
+								var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+								var string_length = 2;
+								var randomstring = '';
+								for (var i=0; i<string_length; i++) 
+								{
+									var rnum = Math.floor(Math.random() * chars.length);
+									randomstring += chars.substring(rnum,rnum+1);
+								}
+								bacon = randomstring;
+								document.write("User" + bacon);
+								</script>							
+						</div>
+						<div class="card-body text-center">
+							<h5 class="card-title">Selling!</h5>
+							<p class="card-text">RTX 2070 SUPER, RUSH</p>
+							<p style="text-align: left;"> <small>							<script type="text/javascript"> 
+								var min=1; 
+								var max=58; 
+								var random = Math.floor(Math.random() * (+max + 1 - +min)) + +min; 
+								document.write("Last updated " + random + " minutes ago" ); 
+							</script></small> </p>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+									<button type="button" class="btn btn-sm btn-outline-secondary">Like</button>
+									<button type="button" class="btn btn-sm btn-outline-secondary">Comment</button>
+								</div>								
+							</div>
+						</div>
+					</div>
+					
+					<div class="card bg-secondary">
+						<div class="card-header">
+							<div class="mr-2" style="height: 20px; width: 20px; background-color: #FFF226; vertical-align: middle; border-radius: 50%; display: inline-block;"></div>
+								<script type="text/javascript">
+								var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+								var string_length = 2;
+								var randomstring = '';
+								for (var i=0; i<string_length; i++) 
+								{
+									var rnum = Math.floor(Math.random() * chars.length);
+									randomstring += chars.substring(rnum,rnum+1);
+								}
+								bacon = randomstring;
+								document.write("User" + bacon);
+								</script>							
+						</div>
+						<div class="card-body">
+							<h5>Need help with<a href="https://youtu.be/dQw4w9WgXcQ"> this</a></h5>
+							<p class="card-text">Any tutorials available online?</p>
+							<p> <small>							<script type="text/javascript"> 
+								var min=1; 
+								var max=23; 
+								var random = Math.floor(Math.random() * (+max + 1 - +min)) + +min; 
+								document.write("Updated " + random + " hours ago" ); 
+							</script></small> </p>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+									<button type="button" class="btn btn-sm btn-outline-secondary">Like</button>
+									<button type="button" class="btn btn-sm btn-outline-secondary">Comment</button>
+								</div>
+							</div>
+						</div>						
+					</div>
+					
+					<div class="card bg-secondary">
+						<div class="card-header">
+							<div class="mr-2" style="height: 20px; width: 20px; background-color: #FF6666; vertical-align: middle; border-radius: 50%; display: inline-block;"></div>				
+								<script type="text/javascript">
+								var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+								var string_length = 2;
+								var randomstring = '';
+								for (var i=0; i<string_length; i++) 
+								{
+									var rnum = Math.floor(Math.random() * chars.length);
+									randomstring += chars.substring(rnum,rnum+1);
+								}
+								bacon = randomstring;
+								document.write("User" + bacon);
+								</script>
+						</div>
+						<img src="https://raw.githubusercontent.com/ZennithYattare/ZennithYattare.github.io/master/socmedp/images/patrick-hodskins-nxFXWc5-FFs-unsplash.jpg" class="card-img-top" alt="Photo by Patrick Hodskins on Unsplash">					
+						<div class="card-body">
+						<h5 class="card-title">Ruuning in the 90s</h5>						
+						<p class="card-text">Tofu has to be delivered on time.
+						</p>
+						<p>
+						<small>							<script type="text/javascript"> 
+								var min=1; 
+								var max=58; 
+								var random = Math.floor(Math.random() * (+max + 1 - +min)) + +min; 
+								document.write("Updated " + random + " minutes ago" ); 
+							</script></small>
+						</p>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+									<button type="button" class="btn btn-sm btn-outline-secondary">Like</button>
+									<button type="button" class="btn btn-sm btn-outline-secondary">Comment</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</main>
+
+		<footer class="text-muted">
+			<div class="container">
+				<p class="float-right">
+					<a href="clickmedia.jsp">Back to top</a>
+				</p>
+				<p>Bits and pieces were sourced from © Bootstrap.</p>
+				<p>Thank you, Bootstrap, for existing: help from<a href="https://getbootstrap.com/docs/4.5/examples/album/"> here</a> and a bit more <a href="https://getbootstrap.com/docs/4.3/components/card/">here</a>.</p>
+			</div>
+		</footer>
+		
+		  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+	</body>
+</html>
