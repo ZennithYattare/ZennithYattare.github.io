@@ -4,7 +4,12 @@
 		<link href="https://ZennithYattare.github.io/socmedp/css/bootstrap.css" rel="stylesheet">
 		<link href="https://ZennithYattare.github.io/socmedp/css/album.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="style.css" rel="stylesheet"/>
 		<style>
+			html 
+			{
+				scroll-behavior: smooth;
+			}
 			.bd-placeholder-img 
 			{
 				font-size: 1.125rem;
@@ -41,7 +46,12 @@
 
 			.active {
   				color: white;
-			}	
+			}
+			
+			#home
+			{
+				background: url(main.png) no-repeat 50% 50%;
+			}
 		</style>
 	</head>
 	
@@ -62,12 +72,15 @@
 			
 		<main role="main">
 		
-		<div>
-		
+		<div id="home">
+			<div class="landing-text">
+				<h1>Cheesedog.</h1>
+				<a href="#album">scroll down</a>
+			</div>
 		</div>
 			
-		<h1 style="text-align: center;"> New posts for today </h1>
-		<div> <p> <br> </p> </div>
+		
+		<div id="album"> <p> <br> </p> </div>
 		<div class="album">
 			<div class="container">
 				<div class="card-columns">
@@ -202,6 +215,7 @@
 				</div>
 			</div>
 		</div>
+		
 		</main>
 
 		<footer class="text-muted">

@@ -1,0 +1,8 @@
+#home
+{
+	background: url("main.png") no-repeat 50% 50%;
+	display: table;
+	height: 100%;
+	width: 100%;
+	background-size: contain;
+}
