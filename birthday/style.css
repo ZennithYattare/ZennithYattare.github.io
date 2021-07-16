@@ -4,5 +4,13 @@
 	display: table;
 	height: 100%;
 	width: 100%;
-	background-size: contain;
+	background-size: cover;
+}
+
+.scroll
+{
+	display: table-cell;
+	vertical-align: bottom;
+	text-align: center;
+	text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 }
