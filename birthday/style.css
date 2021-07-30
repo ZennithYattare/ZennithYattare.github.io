@@ -2,12 +2,12 @@ html
 {
 	scroll-behavior: smooth;
 }
+
 .bgcolor
 {
-/* 	background-color: #1c1e21; */
-/* 	background-color: #283043; */
 	background-color: #141213;	
 }
+
 .cardtext
 {
 	color: #FAFAFA;
@@ -17,14 +17,17 @@ body
 {
 	font-family: Arial, Helvetica, sans-serif;
 }
+
 p
 {
 	text-align: justify;
 }
+
 .active 
 {
 	color: white;
 }
+
 .scroll
 {
 	position: absolute;
@@ -43,9 +46,8 @@ video {
     width: 100%; 
     height: 100%;
     object-fit: cover;
+    overflow: hidden;
 }
-
-canvas{display:block}
 
 .youtube {
     background-color: #000;
@@ -55,12 +57,14 @@ canvas{display:block}
     overflow: hidden;
     cursor: pointer;
 }
+
 .youtube img {
     width: 100%;
     top: -16.84%;
     left: 0;
     opacity: 0.7;
 }
+
 .youtube .play-button {
     width: 90px;
     height: 60px;
@@ -70,28 +74,33 @@ canvas{display:block}
     opacity: 0.8;
     border-radius: 6px;
 }
+
 .youtube .play-button:before {
     content: "";
     border-style: solid;
     border-width: 15px 0 15px 26.0px;
     border-color: transparent transparent transparent #fff;
 }
+
 .youtube img,
 .youtube .play-button {
     cursor: pointer;
 }
+
 .youtube img,
 .youtube iframe,
 .youtube .play-button,
 .youtube .play-button:before {
     position: absolute;
 }
+
 .youtube .play-button,
 .youtube .play-button:before {
     top: 50%;
     left: 50%;
     transform: translate3d( -50%, -50%, 0 );
 }
+
 .youtube iframe {
     height: 100%;
     width: 100%;
