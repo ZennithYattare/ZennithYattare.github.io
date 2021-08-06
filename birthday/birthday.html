@@ -7,6 +7,8 @@
 		<link href="https://ZennithYattare.github.io/socmedp/css/album.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://ZennithYattare.github.io/birthday/style.css" rel="stylesheet"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 	</head>
 	
 	<body class="bgcolor">
@@ -15,12 +17,66 @@
 		
 		<div id="video">
 			<video id="bgvid" autoplay loop muted playsinline>
-				<source src="main.mp4" type="video/mp4">
+<!-- 				<source src="main.mp4" type="video/mp4"> -->
 			</video>
 			<div class="scroll">
 				<h5><a href="#album" style="text-decoration: none; color: white;">▼ scroll ▼</a></h5>
 			</div>
 		</div>
+
+<!-- <div class="container"> -->
+<!--   <div class="row"> -->
+<!--     <video id="vid" loop muted autoplay></video> -->
+<!--   </div>   -->
+<!-- </div> -->
+
+	<script>
+	var w = window.matchMedia("(max-width: 768px)");
+	var vid = document.getElementById("bgvid");
+	var source = document.createElement("source");
+	source.id = "hvid";
+	source.setAttribute("type", "video/mp4");
+	vid.appendChild(source);
+	  
+	if (w.matches) 
+	{
+		vid.pause();
+		source.removeAttribute("src");
+		source.setAttribute("src", "mobile.mp4");
+		vid.load();
+		vid.play();
+	} 
+	else 
+	{
+		vid.pause();
+		source.removeAttribute("src");
+		source.setAttribute("src", "main.mp4");
+		vid.load();
+		vid.play();
+	}
+	
+	window.addEventListener("resize", function()
+	{
+		var w = window.matchMedia("(max-width: 768px)");
+		var vid = document.getElementById("bgvid");
+		var source = document.getElementById("hvid");
+	
+		if (w.matches) 
+		{
+			vid.pause();
+			source.src = "mobile.mp4";
+			vid.load();
+			vid.play();
+		} 
+		else 
+		{
+			vid.pause();
+			source.src = "main.mp4";
+			vid.load();
+			vid.play();
+		}
+	});
+	</script>
 			
 		<div id="album"> <p> <br> <br> <br> </p> </div>
 		<div class="album">
@@ -261,6 +317,7 @@
 	  };
 	  
 	} )();
-</script>
+	</script>
+
 
 </body></html>
