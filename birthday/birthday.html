@@ -7,8 +7,7 @@
 		<link href="https://ZennithYattare.github.io/socmedp/css/album.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://ZennithYattare.github.io/birthday/style.css" rel="stylesheet"/>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 	</head>
 	
 	<body class="bgcolor">
@@ -17,66 +16,11 @@
 		
 		<div id="video">
 			<video id="bgvid" autoplay loop muted playsinline>
-<!-- 				<source src="main.mp4" type="video/mp4"> -->
 			</video>
 			<div class="scroll">
 				<h5><a href="#album" style="text-decoration: none; color: white;">▼ scroll ▼</a></h5>
 			</div>
 		</div>
-
-<!-- <div class="container"> -->
-<!--   <div class="row"> -->
-<!--     <video id="vid" loop muted autoplay></video> -->
-<!--   </div>   -->
-<!-- </div> -->
-
-	<script>
-	var w = window.matchMedia("(max-width: 768px)");
-	var vid = document.getElementById("bgvid");
-	var source = document.createElement("source");
-	source.id = "hvid";
-	source.setAttribute("type", "video/mp4");
-	vid.appendChild(source);
-	  
-	if (w.matches) 
-	{
-		vid.pause();
-		source.removeAttribute("src");
-		source.setAttribute("src", "mobile.mp4");
-		vid.load();
-		vid.play();
-	} 
-	else 
-	{
-		vid.pause();
-		source.removeAttribute("src");
-		source.setAttribute("src", "main.mp4");
-		vid.load();
-		vid.play();
-	}
-	
-	window.addEventListener("resize", function()
-	{
-		var w = window.matchMedia("(max-width: 768px)");
-		var vid = document.getElementById("bgvid");
-		var source = document.getElementById("hvid");
-	
-		if (w.matches) 
-		{
-			vid.pause();
-			source.src = "mobile.mp4";
-			vid.load();
-			vid.play();
-		} 
-		else 
-		{
-			vid.pause();
-			source.src = "main.mp4";
-			vid.load();
-			vid.play();
-		}
-	});
-	</script>
 			
 		<div id="album"> <p> <br> <br> <br> </p> </div>
 		<div class="album">
@@ -86,7 +30,7 @@
 						<div class="card-header bg-info">
 							Abs
 						</div>
-						<div class="youtube" data-embed="pyGVHmjktIo"> 
+						<div class="youtube" data-embed="O8_QmltJc6E"> 
 					    <div class="play-button"></div> 
 						</div>
 						<div class="card-body">
@@ -113,7 +57,7 @@
 						<div class="card-header">
 							Carlyn
 						</div>
-						<div class="youtube" data-embed="MHLKCR3UaPM"> 
+						<div class="youtube" data-embed="QOW4QhEhhoQ"> 
 					    <div class="play-button"></div> 
 						</div>
 						<div class="card-body">
@@ -141,7 +85,7 @@
 						<div class="card-header">
 							Anupama
 						</div>
-						<div class="youtube" data-embed="f9YdUvBY6o4"> 
+						<div class="youtube" data-embed="LJKa_Y5jBn0"> 
 					    <div class="play-button"></div> 
 						</div>
 						<div class="card-body">
@@ -160,6 +104,18 @@
 						<div class="card-body">
 							<h5 class="card-title">Happy Birthday Suzanne</h5>
 							<p class="card-text">and  this is for Many Many years to come... I wish you nothing but the best years ahead 🍻🎂</p>						
+						</div>
+					</div>
+					
+					<div class="card" style="background: #5a5046;">
+						<div class="card-header">
+							Arun
+						</div>
+						<div class="youtube" data-embed="rKgcWwA5dz0"> 
+					    <div class="play-button"></div> 
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Happy Birthday Suzanne!</h5>						
 						</div>
 					</div>
 					
@@ -203,8 +159,8 @@
 						<div class="card-header">
 							Ethel
 						</div>
-						<div class="youtube" data-embed="zQQp2HOXTpQ"> 
-					    <div class="play-button"></div> 
+						<div class="youtube" data-embed="tbrUK4CefzI"> 
+					    <div class="play-button"></div>	
 						</div>
 					</div>
 					
@@ -212,7 +168,7 @@
 						<div class="card-header">
 							Jagdeep
 						</div>
-						<div class="youtube" data-embed="_wsFB1jqT_8"> 
+						<div class="youtube" data-embed="NypmJaNPE0Y"> 
 					    <div class="play-button"></div> 
 						</div>
 					</div>
@@ -226,11 +182,25 @@
 						</div>
 					</div>
 					
+					<div class="card" style="background: #c2b38f;">
+						<div class="card-header">
+							Nisha
+						</div>
+						<div class="youtube" data-embed="N4Y4WYtiehw"> 
+					    <div class="play-button"></div> 
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Happy Birthday Suzanne!</h5>
+							<p class="card-text">Wishing you a fun, fabulous and fulfilling year ahead! Also wishing you good health, good food, good times, good memories, and all things good!<br>
+							Take care and stay safe!</p>						
+						</div>
+					</div>
+					
 					<div class="card" style="background: #807b76;">
 						<div class="card-header">
 							Paulo
 						</div>
-						<div class="youtube" data-embed="WVEzUCbOYug"> 
+						<div class="youtube" data-embed="aZVGYTFi53U"> 
 					    <div class="play-button"></div> 
 						</div>
 						<div class="card-body">
@@ -251,7 +221,7 @@
 						<div class="card-header">
 							Sathish
 						</div>
-						<div class="youtube" data-embed="SJA8yhHsEJM"> 
+						<div class="youtube" data-embed="MlzldlQrA_A"> 
 					    <div class="play-button"></div> 
 						</div>
 					</div>
@@ -260,7 +230,7 @@
 						<div class="card-header">
 							Sunitha
 						</div>
-						<div class="youtube" data-embed="eEwN-mW4uTM"> 
+						<div class="youtube" data-embed="2PIy_bnPEvw"> 
 					    <div class="play-button"></div> 
 						</div>
 					</div>
@@ -318,6 +288,53 @@
 	  
 	} )();
 	</script>
-
+	
+	<script>
+	var w = window.matchMedia("(max-width: 768px)");
+	var vid = document.getElementById("bgvid");
+	var source = document.createElement("source");
+	source.id = "hvid";
+	source.setAttribute("type", "video/mp4");
+	vid.appendChild(source);
+	  
+	if (w.matches) 
+	{
+		vid.pause();
+		source.removeAttribute("src");
+		source.setAttribute("src", "mobile.mp4");
+		vid.load();
+		vid.play();
+	} 
+	else 
+	{
+		vid.pause();
+		source.removeAttribute("src");
+		source.setAttribute("src", "main.mp4");
+		vid.load();
+		vid.play();
+	}
+	
+	window.addEventListener("resize", function()
+	{
+		var w = window.matchMedia("(max-width: 768px)");
+		var vid = document.getElementById("bgvid");
+		var source = document.getElementById("hvid");
+	
+		if (w.matches) 
+		{
+			vid.pause();
+			source.src = "mobile.mp4";
+			vid.load();
+			vid.play();
+		} 
+		else 
+		{
+			vid.pause();
+			source.src = "main.mp4";
+			vid.load();
+			vid.play();
+		}
+	});
+	</script>
 
 </body></html>
